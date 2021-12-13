@@ -1,0 +1,47 @@
+header.header
+  .header__container
+    a.header__logo
+      img(src="assets/images/logo.png", alt="Дымоход.ру")
+    .header__navigation
+      a.header__burger
+        .header__burger-box
+          .header__burger-inner
+      nav.header__menu
+        ul.header__menu-list
+          li.header__menu-item
+            a.header__menu-link(href="#") Каталог товаров
+          li.header__menu-item
+            a.header__menu-link(href="#") доставка и оплата
+          li.header__menu-item
+            a.header__menu-link(href="#") Цены
+          li.header__menu-item
+            a.header__menu-link(href="#") Контакты
+      ul.header__connection
+        li.header__connection-item
+          a.header__connection-phone(href="tel:+78125092198", target="_blank")|+7 (812) 
+            span.header__connection-span 509 21 98
+        li.header__connection-item
+          button.header__connection-btn(type="button") перезвоните мне
+      .header__social
+        a(href="https://vk.com/", target="_blank")
+          svg.header__social-link.social-vk
+            use(href="assets/images/sprite/sprite.svg#vk")
+        a(href="https://telegram.org/", target="_blank")
+          svg.header__social-link.social-facebook
+            use(href="assets/images/sprite/sprite.svg#telegram")
+        a(href="https://www.instagram.com/", target="_blank")
+          svg.header__social-link.social-titl.social-inst
+            use(href="assets/images/sprite/sprite.svg#instagram")
+        a(href="https://www.whatsapp.com/", target="_blank")
+          svg.header__social-link.social-titl.social-whatsapp
+            use(href="assets/images/sprite/sprite.svg#whatsapp")
+      .header__search
+        a.header__search-link
+          svg.header__search-item.search__find
+            use(href="assets/images/sprite/sprite.svg#search")
+        a.header__search-link
+          svg.header__search-item.search__hearth
+            use(href="assets/images/sprite/sprite.svg#hearth")
+        a.header__search-link
+          svg.header__search-item.search__cart
+            use(href="assets/images/sprite/sprite.svg#cart")

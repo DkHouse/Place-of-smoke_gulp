@@ -1,0 +1,34 @@
+block variables
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{title ? title : 'Дымоход'}
+    link(href="https://unpkg.com/swiper@7/swiper-bundle.min.css" rel="stylesheet")
+    link(href="/assets/styles/main.css" rel="stylesheet")
+  body
+    main
+      include ../../components/header/header
+      include ../../components/discount/discount
+      include ../../components/sales/sales
+      include ../../components/work/work
+      include ../../components/calculation/calculation
+      include ../../components/privilege/privilege
+      include ../../components/size/size
+      include ../../components/installation/installation
+      include ../../components/about-us/about-us
+      include ../../components/order/order
+      include ../../components/video/video
+      include ../../components/reasons/reasons
+      include ../../components/credit/credit
+      include ../../components/reviews/reviews
+      block content
+      include ../../components/footer/footer
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+    script(src="/assets/js/index.js")
+    block scripts
+
+

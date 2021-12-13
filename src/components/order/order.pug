@@ -1,0 +1,36 @@
+// заявка
+section.order.container
+  h2.order__title Оставьте заявку
+  p.order__text или свяжитесь с нами в социальных сетях
+  .order__social
+    a(href="https://vk.com/", target="_blank")
+      svg.order__social-link.header__social-link.social-vk
+        use(href="assets/images/sprite/sprite.svg#vk")
+    a(href="https://telegram.org/", target="_blank")
+      svg.order__social-link.header__social-link.social-facebook
+        use(href="assets/images/sprite/sprite.svg#telegram")
+    a(href="https://www.instagram.com/", target="_blank")
+      svg.order__social-link.header__social-link.social-litl.social-inst
+        use(href="assets/images/sprite/sprite.svg#instagram")
+    a(href="https://www.whatsapp.com/", target="_blank")
+      svg.order__social-link.header__social-link.social-litl.social-whatsapp
+        use(href="assets/images/sprite/sprite.svg#whatsapp")
+  .order__questions
+    p.order__questions-item Какой дымоход лучше выбрать?
+    p.order__questions-item Занимаетесь обслуживанием дымоходов?
+    p.order__questions-item Сколько стоит монтаж дымохода?
+    p.order__questions-item Сколько стоит выезд инженера на замер?
+    p.order__questions-item Из какой стали выбрать дымоход?
+    p.order__questions-item Сколько стоит выезд инженера на замер?
+  form.order__forms
+    h3.order__forms-title
+      | Для 
+      span.forms__title-span заказа
+      |  замера заполните форму
+    p.order__forms-text С Вами свяжутся в ближайшее время
+    .order__forms-container
+      label.order__forms-label.order__input-btn
+        input.order__input.form-name(name="name", placeholder="Ваше имя", type="text")
+      label.order__forms-label.order__input-btn
+        input.order__input.form-phone(name="phone", placeholder="Ваш телефон", type="tel")
+      button.order__forms-btn.btn(type="button") оставить заявку
