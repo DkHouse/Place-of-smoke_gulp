@@ -22,19 +22,12 @@ header.header
             span.header__connection-span 509 21 98
         li.header__connection-item
           button.header__connection-btn(type="button") перезвоните мне
-      .header__social
-        a(href="https://vk.com/", target="_blank")
-          svg.header__social-link.social-vk
-            use(href="assets/images/sprite/sprite.svg#vk")
-        a(href="https://telegram.org/", target="_blank")
-          svg.header__social-link.social-facebook
-            use(href="assets/images/sprite/sprite.svg#telegram")
-        a(href="https://www.instagram.com/", target="_blank")
-          svg.header__social-link.social-titl.social-inst
-            use(href="assets/images/sprite/sprite.svg#instagram")
-        a(href="https://www.whatsapp.com/", target="_blank")
-          svg.header__social-link.social-titl.social-whatsapp
-            use(href="assets/images/sprite/sprite.svg#whatsapp")
+      .header__social.social
+      
+        +social('https://vk.com/','vk','social-vk')
+        +social('https://telegram.org/','telegram','social-telegram')
+        +social('https://www.instagram.com/','instagram','social-instagram')
+        +social('https://www.whatsapp.com/','whatsapp','social-whatsapp')
       .header__search
         a.header__search-link
           svg.header__search-item.search__find
