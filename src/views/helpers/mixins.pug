@@ -1,4 +1,7 @@
- mixin social(alink,name,mod )       
-    a(class= 'social__link' + ' ' + mod href=${alink} target='_blank')
-          svg(class= social__${name} +' '+ mod)
-            use(href="assets/images/sprite/sprite.svg#${name})
+mixin socials(socialList, section)
+  .socials(class=section + "__socials")
+    ul.socials__list
+      each item in socialList
+        li.socials__item(class=section + "__socials-item")
+          a.socials__link(href= item.href)
+            div(class="socials__img socials__img--" + item.name + " " + section + "__social-img")
