@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/*установка*/
+.installation {
+  max-width: 1322px;
+  margin: 124px auto;
+  font-family: 'Montserrat';
+  padding-left: 52px;
+}
+
+@media (max-width: 768px) {
+  .installation {
+    margin-top: 83px;
+    padding-left: 16px;
+  }
+}
+
+.installation__container {
+  padding-top: 16px;
+  padding-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .installation__container {
+    padding-left: 0;
+  }
+}
+
+.installation__title {
+  font-size: 39px;
+  font-weight: 600;
+  line-height: 49px;
+  text-align: left;
+  letter-spacing: 0.003em;
+}
+
+@media (max-width: 768px) {
+  .installation__title {
+    font-size: 30px;
+  }
+}
+
+.installation__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 66px;
+  font-family: inherit;
+}
+
+@media (max-width: 768px) {
+  .installation__content {
+    margin-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.installation__inform {
+  width: 517px;
+  margin-left: 3px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .installation__inform {
+    width: 738px;
+  }
+}
+
+.installation__text-span {
+  color: var(--color-3);
+  font-weight: 700;
+}
+
+.installation__text-big {
+  margin-top: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.installation__img {
+  margin-top: 7px;
+  margin-left: 74px;
+}
+
+@media (max-width: 768px) {
+  .installation__img {
+    display: none;
+  }
+}
+
+.installation__abaut {
+  margin-top: 56px;
+  max-width: 1215px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .installation__abaut {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.installation-case {
+  min-width: 290px;
+  min-height: 242px;
+  margin-right: 22px;
+}
+
+@media (max-width: 768px) {
+  .installation-case {
+    width: 354px;
+    height: 195px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+}
+
+.installation__box {
+  margin-top: 29px;
+}
+
+.installation__abaut-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.installation__abaut-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@media (max-width: 768px) {
+  .installation__abaut-text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .abaut-price__text-br {
+    display: none;
+  }
+}
+/*# sourceMappingURL=installation.css.map */
