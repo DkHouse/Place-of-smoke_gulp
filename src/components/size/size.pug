@@ -13,16 +13,4 @@ section.size
           | +7 (812) 
           span.inform__phone-span 509-29-98
       p.size__inform-text Наш инженер-проектировщик приедет в удобное для Вас время, поможет с выбором места установки печи или котла и осуществит замер для Вашего дымохода
-  .size__application
-    h3.size__application-title
-      | Для 
-      span.application__title-span заказа
-      |  замера заполните форму!
-    p.size__application-text И получите полную смету требуемых изделий и монтажных работ
-    form.size__application-form
-      .size__application-container
-        label.size__application-label.application__input-btn
-          input.application-input.form-name(name="name", placeholder="Ваше имя", type="text")
-        label.size__application-label.application__input-btn
-          input.application-input.form-phone.js-tel(name="phone", placeholder="Ваш телефон", type="tel")
-        button.size__application-btn.btn(type="button") оставить заявку
+  +forms('size')

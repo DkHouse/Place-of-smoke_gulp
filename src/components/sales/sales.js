@@ -1,4 +1,5 @@
-let salesSwiper = new Swiper('.sales', {
+// init Swiper:
+const salesSwiper = new Swiper('.sales', {
      loop: true,
      //стрелки
      navigation: {
@@ -13,11 +14,8 @@ let salesSwiper = new Swiper('.sales', {
       grabCursor: true,
       breakpoints: {
           768: {
-              slidesPerView: 2,
-              spaceBetween: 30,
-              slidesPerGroup: 1,
-               loopedSlides:2,
-          }
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
       }
  });
- 

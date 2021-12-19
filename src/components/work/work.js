@@ -1,22 +1,14 @@
-let workSwiper = new Swiper('.work__content', {
+const workSwiper = new Swiper('.work__content', {
     loop: true,
     //стрелки
     navigation: {
-         nextEl: '.swiper-button--prev2',
-         prevEl: '.swiper-button--next2'
+         nextEl: '.swiper-button--next2',
+         prevEl: '.swiper-button--prev2'
     }, 
     slidesPerView: 3,
-    spaceBetween: 15,
+    spaceBetween: 24,
     slidesPerGroup: 1,
     loopedSlides: 6,
     autoHeight: true,
-    grabCursor: true,
-    breakpoints: {
-     768: {
-         slidesPerView: 2,
-         spaceBetween: 30,
-         slidesPerGroup: 1,
-         loopedSlides:2,
-     }
-     }   
+    grabCursor: true, 
  });

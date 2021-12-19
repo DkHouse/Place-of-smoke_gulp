@@ -1,4 +1,57 @@
- mixin social(alink,name,mod )       
-    a(class= 'social__link' + ' ' + mod href=${alink} target='_blank')
-          svg(class= social__${name} +' '+ mod)
-            use(href="assets/images/sprite/sprite.svg#${name})
+mixin social(link,name,section)
+  a(href=link target='_blank')
+    svg(class=section+'__social-link').social__link
+      use(href="assets/images/sprite/sprite.svg#"+name)
+
+mixin ticket(section,  ...items)
+    ul(class=section+'__wrapper').swiper-wrapper
+        each item in items
+            li.swiper__hiden= item
+            li(class=section+'__slide').swiper-slide
+              div(class=section+'__slide-img')
+                  img(class=section+'__img-item')(src="assets/images/"+section+"/image1.png" width="213" height="213" alt="Камин")
+              div(class=section+'__slide-cart')
+                  svg(class=section+'__slide-search').search__cart
+                      use(href="assets/images/sprite/sprite.svg#cart")
+              div(class=section+'__slide-content')
+                  p(class=section+'__slide-title') Kratki
+                  p(class=section+'__slide-text') Каминная топка Kratki ZUZIA LPT
+                  div(class=section+'__slide-price')
+                      p(class=section+'__slide-price-new')
+                          | 16 490
+                          svg(class=section+'__slide-rub').slide__rub-new
+                              use(href="assets/images/sprite/sprite.svg#rubl")
+                      p(class=section+'__slide-price-old')
+                          s 16 490
+                          svg(class=section+'__slide-rub').slide__rub-old
+                              use(href="assets/images/sprite/sprite.svg#rubl")
+mixin ticket2(section,  ...items)                     
+    ul(class=section+'__slider').swiper-wrapper
+        each item in items
+            li.swiper__hiden= item 
+            li(class=section+'__case').swiper-slide
+                div(class=section+'__case-img')
+                  img(class=section+'__img-item')(src="assets/images/"+section+"/swiper/"+item+".jpg" width="365" height="250" alt="работа"+item+"")
+                div(class=section+'__case-content')
+                  div(class=section+'__case-title') Печь «Бахта»
+                  ul(class=section+'__case-property')
+                    li(class=section+'__case-item')
+                      p(class=section+'__case-product') Диаметр
+                      p(class=section+'__case-value') 115/250
+                    li(class=section+'__case-item')
+                      p(class=section+'__case-product') Сталь
+                      p(class=section+'__case-value').work-value__second 304-0,8/430
+                  h4(class=section+'__case-text') Чугунная отопительно-варочная печь. Дымоход собственного производства, вертикальный с металлической походкой кровли, защита пола экран из нержавейки с минеритом.
+mixin forms(section) 
+    div(class=section+'__forms').forms
+        h3(class=section+'__forms-title').forms__title
+          | Для 
+          span(class=section+'__forms-span').forms__span заказа
+          |  замера заполните форму!
+        p(class=section+'__forms-text').forms__text И получите полную смету требуемых изделий и монтажных работ
+        form(class=section+'__forms-container').forms__container
+            label(class=section+'__forms-label').forms__label
+              input(class=section+'__input').forms__input.forms-name(name="name", placeholder="Ваше имя", type="text")
+            label(class=section+'__forms-label').forms__label
+              input(class=section+'__input').forms__input.forms-phone(name="phone", placeholder="Ваш телефон", type="tel")
+            button(class=section+'__forms-btn').forms__btn.btn(type="button") оставить заявку 

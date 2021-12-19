@@ -1,9 +1,9 @@
 .sales {
-	padding-top: 172px;
+	padding: 172px 10px 0;
 	min-width: 0px;	
 	cursor: pointer;
 	overflow: hidden;
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
 		margin: 0 auto;
 		padding-top: 81px;
 		padding-left: 16px;
@@ -28,21 +28,23 @@
 	margin-top: 61px;
 	display: flex;
 	justify-content: space-between;	
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
 		margin-bottom: 23px;
 	}
 }
 
 .sales__slide {
 	padding-top: 21px;
-	width: 282px;
+	max-width: 282px;
+	width: 100%;
 	min-height: 400px;
 	font-family: inherit;
 	border-radius: 5px;
 	border: 1px solid var(--color-8);
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
 		padding-top: 15px;
-		min-width: 353px;
+		max-width: 353px;
+		width: 100%;
 		min-height: 405px;
 		margin-right: 30px;
 	}
@@ -57,13 +59,13 @@
 		width: 154px;
 		position: absolute;
 		border-bottom: 2px solid var(--color-8);
-		@media (max-width: 768px) {
+		@media (max-width: 900px) {
 			width: 297px;
 		}	
 	}
 }
 .sales__img-item{
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
 		margin-left: 61px;
 		margin-bottom: 14px;
 		width: 231px;
@@ -80,7 +82,7 @@
 	background-color: var(--color-5);
 	position: relative;
 	margin-right: 15px;
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
 		position: relative;
 		top: 140px;
     	right: 40px;
@@ -96,7 +98,7 @@
 }
 .sales__slide-content {
 	margin: 0 31px;
-	@media (max-width: 768px) {
+	@media (max-width: 900px) {
 		text-align: center;
 	}
 }
