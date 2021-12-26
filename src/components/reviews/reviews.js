@@ -1,4 +1,4 @@
-let reviewsSwiper = new Swiper('.reviews__slider-content', {
+/*let reviewsSwiper = new Swiper('.reviews__slider-container', {
     loop: true,
     //стрелки
     navigation: {
@@ -6,9 +6,7 @@ let reviewsSwiper = new Swiper('.reviews__slider-content', {
          prevEl: '.swiper-button--next3'
     }, 
     slidesPerView: 3.2,
-    spaceBetween: 25,
     slidesPerGroup: 1,
     loopedSlides: 3.2,
-    autoHeight: true,
     grabCursor: true,
- });
+ });*/

@@ -1,13 +1,37 @@
 .reviews__container {
-	max-width: 1898px;
+	max-width: 1560px;
 	margin: 191px auto 0;
 	font-family: 'Montserrat';
-	transform: translatex(293px);
+	transform: translateX(11%);
+    @media (max-width: 1880px) {
+        transform: translateX(5%);
+    }
+    @media (max-width: 1730px) {
+        transform: translateX(1%);
+        padding: 0 15px;
+    }
+    @media (max-width: 1630px) {
+        margin-top: 68px;
+        transform: translateX(0);
+    }
+    @media (max-width: 1040px) {
+        margin-top: 68px;
+        max-width: 741px;
+    }
+    @media (max-width: 745px) {
+        margin-top: 44px;
+        max-width: 290px;
+    }
 }
 .reviews__title {
+    padding-top: 11px;
 	font-size: 40px;
 	font-weight: 600;
 	line-height: 49px;
+    @media (max-width: 1040px) {
+        font-size: 30px;
+        line-height: 36px;
+    }
 }
 .reviews__text {
 	max-width: 519px;
@@ -15,65 +39,123 @@
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 30px;
+    @media (max-width: 1040px) {
+        margin-top: 45px;
+    }
 }
 .reviews__slider-blok {
 	margin-top: 68px;
 	display: flex;
+    @media (max-width: 1040px) {
+        margin-top: 42px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    @media (max-width: 740px) {
+        margin-top: 21px;
+        align-items: center;
+    }
 }
 .reviews__button {
 	display: flex;
+    @media (max-width: 1040px) {
+        top: 0;
+        right: 1%;
+        position: absolute;
+    }
+    @media (max-width: 740px) {
+        position: relative;
+        order:2;
+        margin-top: 32px;
+    }
 }
 .reviews__slider-container {
-	margin-left: 101px;
-}
-.reviews__slider-content {
-	max-width: 1364px;
-	min-height: 280px;
-	padding: 10px;
-	overflow: hidden;
+    margin-left: 106px;
+    min-width: 0;
+    display: flex;
+    flex: 1 1 auto;
+    height: 270px;
+    @media (max-width: 1040px) {
+        margin-left: 0;
+        height: 287px;
+    }
+    @media (max-width: 740px) {
+        order:1;  
+    }
 }
 .reviews__slider-wrapper{
     display: flex;
     justify-content: space-between;
+    gap: 24px;
+    overflow: hidden;
+    @media (max-width: 1040px) {
+        max-width: 741px;
+    }
+    @media (max-width: 745px) {
+        max-width: 290px;
+    }
 }
-.reviews__slider-case {
-	width: 400px;
-	min-height: 260px;
-	padding: 33px 29px 0 52px;
-	position: relative;
-	background-color: #fff;
-	-moz-box-shadow: 4px 5px 31px -7px rgba(34, 60, 80, 0.2);
-	box-shadow: 4px 5px 31px -7px rgba(34, 60, 80, 0.2);
-	z-index: 1;
+.reviews__slide{
+    max-width: 390px;
+    width: 100%;
+    height: 260px;
+    padding: 33px 28px 0px 50px;
+    box-shadow: 4px 5px 31px -7px rgba(34, 60, 80, 0.2);
+    position: relative;
+    @media (max-width: 1040px) {
+        max-width: 354px;
+        width: 100%;
+        height: 275px;
+    }
+    @media (max-width: 745px) {
+        max-width: 290px;
+        width: 100%;
+        height: 280px;
+        padding: 20px 17px 0px 36px;
+    }
 }
-.reviews-case__feedback {
-	font-size: 14px;
+.reviews__slide-feedback{
+    font-size: 14px;
 	font-weight: 300;
 	line-height: 22px;
-	&::before {
-		content: "";
-		width: 3px;
-		display: block;
-		height: 102px;
-		background: var(--color-3);
-		position: absolute;
-		left: 30px;
-		top: 37px;
-	}
+    overflow: auto;
+    height: 110px; 
+    @media (max-width: 1040px) {
+        height: 132px;
+    } 
+    @media (max-width: 740px) {
+        height: 154px;
+    }
+    &::before {
+        content: "";
+        margin-top: 5px;
+        left: 29px;
+        width: 3px;
+        height: 99px;
+        background-color: var(--color-3);
+        position: absolute;
+        @media (max-width: 740px) {
+            left: 22px;
+        }
+    }
 }
-.reviews-case__user {
-	margin-top: 27px;
-	font-size: 18px;
+.reviews__slide-user{
+    margin-top: 17px;
+    display: flex;
+}
+.reviews__slide-inf{
+    margin-top: 12px;
+    margin-left: 22px;
+    align-items: center;
+    font-size: 18px;
 	font-weight: 600;
 	line-height: 20px;
-	display: flex;
+    @media (max-width: 740px) {
+        font-size: 14px;
+    }
 }
-.reviews-case__inf {
-	margin-top: 10px;
-	margin-left: 23px;
-}
-.reviews-case__date {
-	margin-top: 7px;
+.reviews__slide-date{
+    margin-top: 7px;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 17px;

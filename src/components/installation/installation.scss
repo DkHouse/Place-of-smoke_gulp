@@ -4,17 +4,17 @@
     margin: 124px auto;
     font-family: 'Montserrat';
     padding-left: 52px;
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       margin-top: 83px;
       padding-left: 16px;
+      max-width: 738px;
+      width: 100%;
     }
-  }
-  .installation__container{
-    padding-top: 16px;
-    padding-left: 16px;
-    @media (max-width: 768px) {
-      padding-left: 0;
-    }
+    @media (max-width: 700px) {
+        max-width: 290px;
+        width: 100%;
+        padding-left: 0px;
+      }
   }
   .installation__title { 
     font-size: 39px;
@@ -22,8 +22,19 @@
     line-height: 49px;
     text-align: left;
     letter-spacing: 0.003em;
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       font-size: 30px;
+    }
+    @media (max-width: 700px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+  }
+  .installation__container{
+    padding-top: 16px;
+    @media (max-width: 1000px) {
+      padding-left: 0;
+      margin: 0 auto;
     }
   }
   
@@ -31,21 +42,26 @@
     display: flex;
     margin-top: 66px;
     font-family: inherit;
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       margin-top:40px;
       flex-direction: column;
     }
   }
   
   .installation__inform {
-    width: 517px;
+    max-width: 517px;
+    width: 100%;
     margin-left: 3px;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
     text-align: left;
-    @media (max-width: 768px) {
-      width:738px;
+    @media (max-width: 1000px) {
+      max-width:738px;
+      width: 100%;
+    }
+    @media (max-width: 700px) {
+        margin-left: 0px;
     }
   }
   
@@ -62,24 +78,38 @@
   .installation__img{
     margin-top: 7px;
     margin-left: 74px;
-    @media (max-width: 768px) {
-      display: none;
+    max-width: 624px;
+    width:100%;
+    height: 313px;
+    background-image: url(/assets/images/installation/installation.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    @media (max-width:1300px) {    
+        max-width: 524px;
+        width:100%;
+        height: auto;
+      }
+    @media (max-width:1000px) {
+        display: none;
     }
   }
   .installation__abaut {
     margin-top: 56px;
     max-width: 1215px;
     display: flex;
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       flex-wrap: wrap;
-	    flex-direction: row;
+	  flex-direction: row;
+      gap: 30px;
+      justify-content: center;
     }
   }
   .installation-case {
-    min-width: 290px;
-    min-height: 242px;
+    max-width: 290px;
+    width:100%;
     margin-right: 22px;
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
         width: 354px;
         height: 195px;
         text-align: center;
@@ -100,14 +130,14 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       font-size: 14px;
       line-height: 26px;
       
   }
   }
   .abaut-price__text-br{
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       display: none;
   }
   }

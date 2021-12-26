@@ -6,7 +6,14 @@
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 23px;
-	text-decoration: none;	
+	text-decoration: none;
+	@media (max-width: 1600px) {
+		font-weight: 600;
+	  }	
+	@media (max-width: 900px) {
+		font-weight: 500;
+		font-size: 15px;
+	  }
 }
 .header__container {
 	display: flex;
@@ -14,29 +21,34 @@
     margin: 27px auto 0;
 	padding-left: 16px;
 	padding-right: 16px;
-	@media (max-width: 900px) {
-		justify-content: space-between;
-	  }
+	justify-content: space-between;
 }
 .header__logo {
-	max-width: 100px;
-	min-height: 97px;
-	margin-right: 50px;
+	margin-right: 10px;
 	@media (max-width: 900px) {
-		margin:0;
+		weight: 64px;
+		height: 62px;
+	  }
+	@media (max-width: 410px) {
+		weight: 48px;
+		height: 47px;
 	  }
 }
 .header__navigation {
 	display: flex;
 	align-items: center;
-	@media (max-width: 900px) {
-		margin:0;
+	@media (max-width: 1826px) {
+		font-weight: 600;
+		font-size: 14px;
 	  }
 }
 .header__burger {
 	margin-right: 31px;
 	cursor: pointer;
-	@media (max-width: 900px) {
+	@media (max-width: 1600px) {
+		margin-right: 10px;
+	  }
+	@media (max-width: 950px) {
 		margin: 0;
 		order: 2;
 	  }
@@ -75,7 +87,10 @@
 }
 .header__menu {
 	margin-right: 58px;
-	@media (max-width: 900px) {
+	@media (max-width: 1826px) {
+		margin-right: 10px;
+	  }
+	@media (max-width: 950px) {
 		display: none;
 	  }
 }
@@ -88,21 +103,30 @@
 	&:hover {
 		color: var(--color-0);
 	}
+	@media (max-width: 1800px) {
+		margin-right: 10px;
+	} 
 }
 .header__connection {
-	display: flex;
-	@media (max-width: 900px) {
+	display: inline-flex;
+	@media (max-width: 1240px) {
 		display: none;
 	  }
 }
 .header__connection-item:nth-child(1) {
 	margin-right: 40px;
+	@media (max-width: 1826px) {
+		margin-right: 10px;
+	  }	
 }
 .header__connection-phone {
 	margin-right: 34px;
 	font-weight: 400;
 	line-height: 20px;
 	letter-spacing: 0.08em;
+	@media (max-width: 1800px) {
+		margin-right: 10px;
+	}
 }
 .header__connection-span {
 	font-weight: 700;
@@ -131,7 +155,10 @@
 	margin-left: 64px;
     margin-top: 14px;
 	cursor: pointer;
-	@media (max-width: 900px) {
+	@media (max-width: 1490px) {
+		margin-left: 10px;
+	} 
+	@media (max-width: 1380px) {
 		display: none;
 	  }
 }
@@ -140,7 +167,10 @@
 	align-items: center;
 	margin-left: 41px;
 	cursor: pointer;
-	@media (max-width: 900px) {
+	@media (max-width: 1490px) {
+		margin-left: 10px;
+	} 
+	@media (max-width: 950px) {
 		order: 1;
 		margin: 0;
 	  }
@@ -158,6 +188,11 @@
 	border: 1px solid var(--color-1);
 	position: relative;
 	margin-right: 15px;
+	&:not(:last-child) {
+		@media (max-width: 410px) {
+			display: none;
+		}
+	}
 }
 .search__find {
 	fill: var(--color-2);

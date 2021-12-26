@@ -1,7 +1,7 @@
 .privilege {
 	margin-top: 126px;
-	@media (max-width: 768px) {
-		margin-top: -25px;
+	@media (max-width: 1200px) {
+		margin-top: 56px;
 		margin-left: 16px;
 		margin-right: 16px;
 	}
@@ -13,31 +13,46 @@
 	line-height: 49px;
 	letter-spacing: 0.01em;
 	text-align: left;
+	@media (max-width: 1200px) {
+		font-size: 30px;
+		line-height: 36px;
+	}
 }
 .privilege__contante {
 	margin-top: 69px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	gap: 26px;
 	justify-content: space-between;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 30px;
-	@media (max-width: 768px) {
+	@media (max-width: 1340px) {
+		justify-content: center;
+	}
+	@media (max-width: 960px) {
 		margin-top: 39px;
 	}
 }
 .privilege__case {
-	width: 593px;
+	max-width: 593px;
+	width: 100%;
 	display: flex;
 	position: relative;
-	margin-bottom: 26px;
-	@media (max-width: 768px) {
+	@media (max-width: 1340px) {
 		flex-direction: column;
-		width: 354px;
+		max-width: 450px;
+		width: 100%;
 		text-align: center;
-		margin-bottom: 37px;
-		margin-left: 0;
+	}
+	@media (max-width: 960px) {		
+		max-width: 354px;
+		width: 100%;
+	}
+	@media (max-width: 765px) {
+		max-width: 290px;
+		width: 100%;
 	}
 }
 
@@ -48,9 +63,14 @@
 	position: relative;
 	z-index: 1;
     transition: .4s;
-	@media (max-width: 768px) {
-		width: 177px;
+	@media (max-width: 1220px) {
+		max-width: 177px;
+		width: 100%;
 		margin: 0 auto;
+	}
+	@media (max-width: 630px) {
+		max-width: 121px;
+		width: 100%;
 	}
     &:hover {
 		border: 1px solid var(--color-6);
@@ -82,6 +102,12 @@
 }
 .privilege__img-item {
 	margin: 29px 50px 44px 54px;
+	@media (max-width: 960px) {
+		margin: 35px 54px;
+	}
+	@media (max-width: 636px) {
+		margin: 22px 26px;
+	}
 }
 .privilege__box {
 	margin-left: 30px;
@@ -89,7 +115,7 @@
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 30px;
-	@media (max-width: 768px) {
+	@media (max-width: 960px) {
 		margin-top: 26px;
 		margin-left: 0;
 	}
@@ -99,12 +125,15 @@
 	font-weight: 700;
 	line-height: 30px;
 	margin-bottom: 11px;
-	@media (max-width: 768px) {
+	@media (max-width: 960px) {
 		font-size: 20px;
+	}
+	@media (max-width: 630px) {
+		font-size: 16px;
 	}
 }
 .privilege__box-text{
-	@media (max-width: 768px) {
+	@media (max-width: 960px) {
 		font-size: 14px;
 	}
 }
