@@ -1,0 +1,210 @@
+.about-us {
+    max-width: 1415px;
+    margin: 132px auto 0;
+    padding-left: 43px;
+    font-family: "Montserrat";
+    padding-left: 98px;
+    @media (max-width: 1000px) {
+        margin: -74px auto;
+        padding-left: 16px;
+        max-width: 738px;
+        width: 100%;
+    }
+    @media (max-width: 740px) {
+        max-width: 290px;
+        width: 100%;
+        padding-left: 0px;
+    }
+}
+.about-us__title {
+    padding-top: 17px;
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 49px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    @media (max-width: 1000px) {
+        font-size: 30px;
+    }
+    @media (max-width: 740px) {
+        font-size: 20px;
+        line-height: 30px
+    }
+}
+.about-us__inform {
+    display: flex;
+}
+.about-us__content {
+    max-width: 590px;
+    width: 100%;
+    height: 374px;
+    margin-top: 106px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    @media (max-width: 1340px) {
+        justify-content: center;
+        gap:15px;
+    }
+    @media (max-width:1000px) {
+        margin-top: 40px;
+        margin-left: 16px;
+        max-width: 738px;
+        width: 100%;
+        justify-content: space-between;
+        gap:0px;
+    }
+    @media (max-width: 740px) {
+        margin-top: 32px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        min-height: 500px;
+    }
+}
+.about-us__case {
+    max-width: 281px;
+    width: 100%;
+    min-height: 178px;
+    margin-bottom: 32px;
+    padding-left: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    @media (max-width: 1340px) {
+        max-width: 200px;
+        width: 100%;
+        padding-left: 10px;
+    }
+    @media (max-width: 1000px) {
+        max-width: 320px;
+        width: 100%;
+        padding-left: 0;
+        margin-right: 30px;
+    }
+    @media (max-width: 740px) {
+        max-width: 290px;
+        min-height: 121px;
+        width: 100%;
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    &::before {
+        content: "";
+        width: 100%;
+        height: 82%;
+        right: 4%;
+        top: 19%;
+        border-radius: 4px;
+        border: 1.5px solid var(--color-8);
+        position: absolute;
+        z-index: -2;
+        @media (max-width: 740px) {
+            right: 0%;
+        }
+    }
+}
+
+.about-us__number {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 73px;
+    color: var(--color-6);
+    margin-bottom: 12px;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    @media (max-width: 740px) {
+        margin-left: 0px;
+        font-size: 40px;
+        line-height: 48px;
+    }
+}
+
+.about-us__text {
+    max-width: 221px;
+    margin-left: 2px;
+    @media (max-width: 1340px) {
+        max-width: 290px;
+    }
+    @media (max-width: 740px) {
+        margin-left: 0px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
+
+.about-us__img {
+    max-width: 651px;
+    width: 100%;
+    height: 537px;
+    margin-top: 97px;
+    transform: translateX(92px);
+    background-image: url(/assets/images/about-us/bg_kamin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    @media (max-width: 1440px) {
+        transform: translateX(0px);
+    }
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+.about-us__item {
+    margin-top: -17%;
+    margin-left: 4vw;
+    max-width: 550px;
+    width: 100%;
+    height: 549px;
+    background-image: url(/assets/images/about-us/kamin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    z-index: 3;
+    @media (max-width: 1440px) {
+        margin-top: -2%;
+        margin-left: 12%;
+        max-width: 450px;
+        width: 100%;
+        height: 449px;
+    }
+    @media (max-width: 1250px) {
+        max-width: 400px;
+        width: 100%;
+        height: 400px;
+    }
+    
+}
+.about-us__arrows {
+    &::before {
+        left: -67px;
+        top: 223px;
+        @media (max-width: 1440px) {
+            display: none;
+        }
+    }
+    &::after {
+        content: none;
+    }
+}
+.about-us__point {
+    @media (max-width: 1440px) {
+        display: none;
+    }
+    &::before {
+        left: 92px;
+        top: -47px;
+    }
+    &::after {
+        left: 568px;
+        top: 370px;
+    }
+}

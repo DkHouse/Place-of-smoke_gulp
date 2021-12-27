@@ -1,0 +1,22 @@
+// ОТЗЫВЫ
+section.reviews
+    .reviews__container.red_line
+        h2.reviews__title Отзывы наших клиентов
+        .reviews__text
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .reviews__slider-blok
+            // кнопки
+            .reviews__button
+                .reviews__swiper-button.button-prev.swiper-button--prev3
+                    svg.reviews__arrow.button-arrow.arrow-prev
+                        use(href="assets/images/sprite/sprite.svg#arrow")
+                .reviews__swiper-button.button-next.swiper-button--next3
+                    svg.reviews__arrow.button-arrow.arrow-next
+                        use(href="assets/images/sprite/sprite.svg#next-arrow")
+            // слайдер
+            .reviews__slider-container.swiper-container
+                ul.reviews__slider-wrapper.swiper-wrapper
+                    +ticket3('reviews','Отличная компания, быстро доставили мой заказ и были очень внимательны к моим пожеланиям! Обязательно еще к вам обращусь, первый заказ получился на "отлично"!','Алёна Симонова','1')
+                    +ticket3('reviews','Много где были, выбирая камин своей мечты, но нигде к нам не отнеслись с таким пониманием и душевным теплом, как здесь. Нам не пришлось самим ломать голову при выборе, взвешивать все плюсы ','Антон Баранов','2')
+                    +ticket3('reviews','Отличный магазин! Нет проблем с доставкой. Цены на среднем уровне. Огромный выбор каминов. Монтажом занимаются профессионалы: делают быстро и наверняка. ','Виктор Исаев','3')
+                    +ticket3('reviews','Отличная компания, быстро доставили мой заказ и были очень внимательны к моим пожеланиям! Обязательно еще к вам обращусь, первый заказ получился на "отлично"!','Алёна Симонова','1')

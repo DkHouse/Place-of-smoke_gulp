@@ -42,6 +42,15 @@ mixin ticket2(section,  ...items)
                       p(class=section+'__case-product') Сталь
                       p(class=section+'__case-value').work-value__second 304-0,8/430
                   h4(class=section+'__case-text') Чугунная отопительно-варочная печь. Дымоход собственного производства, вертикальный с металлической походкой кровли, защита пола экран из нержавейки с минеритом.
+mixin ticket3(section,feedback,name,item)                  
+    li(class=section+'__slide').swiper-slide
+        h3(class=section+'__slide-feedback')=feedback
+        div(class=section+'__slide-user')
+            div(class=section+'__slide-img')
+              img(src="assets/images/"+section+"/user"+item+".png" width="64" height="64" alt="user"+item+"")
+            div(class=section+'__slide-inf')
+                p(class=section+'__slide-name')=name
+                p(class=section+'__slide-date') 20.11.2020
 mixin forms(section) 
     div(class=section+'__forms').forms
         h3(class=section+'__forms-title').forms__title

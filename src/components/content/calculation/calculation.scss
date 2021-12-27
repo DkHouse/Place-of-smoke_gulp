@@ -1,0 +1,210 @@
+.calculation {
+    padding-top: 205px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    @media (max-width: 1000px) {
+        margin-right: 16px;
+        padding-top: 28px;
+    }
+    @media (max-width: 760px) {
+        margin: 0 auto;
+    }
+}
+
+.calculation__inform {
+    margin-top: 23px;
+    max-width: 629px;
+    @media (max-width: 1205px) {
+        margin-left: 16px;
+    }
+    @media (max-width: 1000px) {
+        margin-top: 0;
+        max-width: 369px;
+        width: 100%;
+    }
+    @media (max-width: 760px) {
+        margin: 0 auto;
+        max-width: 290px;
+    }
+}
+
+.calculation__title {
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 48px;
+    letter-spacing: 0.003em;
+    color: var(--color-0);
+    @media (max-width: 1000px) {
+        font-size: 23px;
+        line-height: 32px;
+    }
+    @media (max-width: 760px) {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+.calculation__title-span {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 63px;
+    letter-spacing: 0.01em;
+    color: var(--color-3);
+    text-transform: uppercase;
+    @media (max-width: 1000px) {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    @media (max-width: 760px) {
+        font-size: 24px;
+        line-height: 26px;
+    }
+}
+
+.calculation__text {
+    margin-top: 17px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    @media (max-width: 800px) {
+        max-width: 315px;
+    }
+}
+
+.calculation__link {
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    @media (max-width: 768px) {
+        max-width: 287px;
+        margin-top: 20px;
+        margin-right: 7px;
+    }
+}
+
+.calculation__link-span {
+    font-weight: 700;
+    color: var(--color-6);
+}
+
+.calculation__btn {
+    margin-top: 94px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    @media (max-width: 768px) {
+        margin: 36px 8%;
+    }
+}
+
+.calculation__img {
+    max-width: 658px;
+    width: 100%;
+    height: 534px;
+    background-image: url(/assets/images/calculation/calc_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    position: relative;
+    text-align: center;
+    transform: translateX(33%);
+    z-index: 1;
+    @media (max-width: 1600px) {
+        transform: translateX(10%);
+    }
+    @media (max-width: 1310px) {
+        transform: translateX(0%);
+    }
+    @media (max-width: 768px) {
+        transform: translateY(-50px);
+    }
+    @media (max-width: 760px) {
+        display: none;
+    }
+}
+
+.calculation__calc {
+    top: -62px;
+    left: 126px;
+    max-width: 470px;
+    width: 100%;
+    height: 586px;
+    background-image: url(/assets/images/calculation/calc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 4;
+    /*@media (max-width: 1550px) {
+        max-width: 350px;
+        width: 100%;
+        height: 335px;
+    }*/
+    @media (max-width: 1230px) {
+        top: 3%;
+        right: 1%;
+        max-width: 365px;
+        width: 100%;
+        height: 480px;
+    }
+    @media (max-width: 1120px) {
+        top: 17%;
+        right: 1%;
+        max-width: 265px;
+        width: 100%;
+        height: 334px;
+    }
+    @media (max-width: 800px) {
+        left: 22%
+    }
+    @media (max-width: 400px) {
+        top: 12%;
+        left: 4%;
+        max-width: 123px;
+        width: 100%;
+        height: 119px;
+    }
+}
+
+.calculation__arrows {
+    &::before {
+        left: -63px;
+        top: 226px;
+        @media (max-width: 1195px) {
+            display: none;
+        }
+    }
+    &::after {
+        content: none;
+    }
+}
+
+.calculation__point {
+    &::before {
+        left: 95px;
+        top: -46px;
+        @media (max-width: 1195px) {
+            top: 1%;
+        }
+        @media (max-width: 768px) {
+            top: 11%;
+            left: 16%;
+        }
+    }
+    &::after {
+        left: 572px;
+        top: 373px;
+        @media (max-width: 1235px) {
+            left: 91%;
+            top: 344px;
+        }
+        @media (max-width: 768px) {
+            left: 85%;
+            top: 281px;
+        }
+    }
+}
